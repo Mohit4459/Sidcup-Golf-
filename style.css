@@ -9,7 +9,7 @@
 html,
 body {
     height: 100%;
-    
+
     width: 100%;
 }
 
@@ -39,7 +39,7 @@ body {
     width: 500px;
     background-color: #96c11e3c;
     border-radius: 60%;
-    position: fixed ;
+    position: fixed;
     z-index: 9;
     filter: blur(50px);
     transition: all ease 0.4s;
@@ -558,5 +558,184 @@ video {
 
     to {
         transform: translateX(-100%);
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+
+    #nav {
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    #nav h4 {
+        font-size: 14px;
+    }
+
+    .nav-btn {
+        width: 120px;
+        height: 45px;
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    #page1 h1 {
+        font-size: 80px;
+    }
+
+    #page1 p {
+        width: 70%;
+    }
+
+    #about-us {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    #about-us img {
+        width: 80%;
+        height: auto;
+    }
+
+    #about-us-in {
+        width: 90%;
+    }
+
+    #cards-container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .card {
+        width: 40%;
+        height: 300px;
+    }
+
+    #advertise {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .carousel {
+        width: 90vw;
+        height: 40vh;
+        margin: 20px 0;
+    }
+
+    #ptext h4 {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    #nav img {
+        height: 50px;
+        padding-left: 0;
+    }
+
+    #nav h4 {
+        font-size: 12px;
+    }
+
+    .nav-btn {
+        width: 100px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    #page1 h1 {
+        font-size: 45px;
+    }
+
+    #page1 h2 {
+        font-size: 18px;
+    }
+
+    #page1 p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #scroller h4 {
+        font-size: 40px;
+    }
+
+    #cards-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        width: 85%;
+        height: 260px;
+    }
+
+    #green-div h4 {
+        font-size: 16px;
+        line-height: 25px;
+        width: 80%;
+    }
+
+    #page3 p {
+        font-size: 18px;
+        width: 90%;
+        line-height: 28px;
+    }
+
+    #page4 {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .elem {
+        width: 85%;
+        height: 200px;
+    }
+
+    #page4 h1 {
+        font-size: 40px;
+        top: -10%;
+        text-align: center;
+    }
+
+    #footer {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    #f2 h3,
+    #f3 h3 {
+        font-size: 18px;
+    }
+
+    #f4 h4 {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    #cursor,
+    #cursor-blur {
+        display: none;
     }
 }
