@@ -240,6 +240,7 @@ video {
     position: relative;
     background-size: cover;
     border-radius: 2rem;
+    overflow: hidden;
     background-position: center;
 }
 
@@ -370,6 +371,7 @@ video {
     display: flex;
     background-color: #95c11e;
     align-items: center;
+    text-align: center;
     font-size: 35px;
     position: absolute;
     z-index: 10;
@@ -389,7 +391,7 @@ video {
 
 .elem:hover h2 {
     color: #fff;
-    scale: 1.1;
+    transform: scale(1.1);
     background-color: transparent;
 }
 
@@ -562,6 +564,36 @@ video {
 }
 
 
+
+
+/* ================laptops(15.6 inch) ===================== */
+@media (max-width: 1440px) {
+
+    .card {
+        height: 75%;
+    }
+
+    .overlay {
+        padding: 30px;
+        padding-top: 90px;
+    }
+
+    .overlay h4 {
+        font-size: 28px;
+    }
+
+    .overlay p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .elem {
+        text-align: center;
+        align-items: center;
+
+    }
+}
+
 /* ================= LARGE LAPTOPS & SMALL DESKTOPS ================= */
 @media (max-width: 1366px) {
 
@@ -586,8 +618,28 @@ video {
         font-size: 26px;
     }
 
-}
+    .overlay {
+        padding: 22px;
+        padding-top: 75px;
+    }
 
+    .overlay h4 {
+        font-size: 24px;
+    }
+
+    .overlay p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    .elem {
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 
 /* ================= SMALL LAPTOPS (14 inch) ================= */
 @media (max-width: 1280px) {
@@ -610,6 +662,11 @@ video {
 
     #page4 h1 {
         font-size: 60px;
+    }
+
+    .elem {
+        align-items: center;
+        justify-content: center;
     }
 
 }
@@ -684,6 +741,14 @@ video {
         font-size: 35px;
     }
 
+    .overlay p {
+        -webkit-line-clamp: 3;
+    }
+
+    .elem {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
@@ -777,6 +842,10 @@ video {
         flex-shrink: 0;
     }
 
+    .overlay p {
+        -webkit-line-clamp: 2;
+    }
+
     /* GREEN DIV */
     #green-div {
         flex-direction: column;
@@ -829,6 +898,9 @@ video {
     .elem {
         width: 90%;
         height: 180px;
+        align-items: center;
+        justify-content: center;
+
     }
 
     #page4 h1 {
@@ -873,6 +945,11 @@ video {
         width: 85px;
         height: 34px;
         font-size: 9px;
+    }
+
+    .elem {
+        align-items: center;
+        justify-content: center;
     }
 
 }
